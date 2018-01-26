@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS mysqljpa;
+USE mysqljpa;
+
+DROP TABLE IF EXISTS tb_empleado;
+CREATE TABLE tb_empleado (
+  COD_EMP int(10) unsigned NOT NULL AUTO_INCREMENT,
+  NOM_EMP varchar(45) NOT NULL,
+  APE_EMP varchar(45) NOT NULL,
+  EDA_EMP int(10) unsigned NOT NULL,
+  ARE_EMP varchar(45) NOT NULL,
+  PRIMARY KEY (COD_EMP)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
