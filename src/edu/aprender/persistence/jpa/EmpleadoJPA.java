@@ -1,4 +1,4 @@
-package edu.cibertec.persistence.jpa;
+package edu.aprender.persistence.jpa;
 
 import java.util.List;
 

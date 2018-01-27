@@ -11,7 +11,7 @@ import javax.persistence.PreUpdate;
 import org.apache.log4j.Logger;
 
 import edu.aprender.persistence.entity.Empleado;
-import edu.cibertec.test.EmpleadoTest;
+import edu.aprender.test.EmpleadoTest;
 
 public class EmpleadoListener {
 

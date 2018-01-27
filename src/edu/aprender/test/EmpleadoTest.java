@@ -1,11 +1,11 @@
-package edu.cibertec.test;
+package edu.aprender.test;
 
 import java.util.List;
 
 import org.apache.log4j.Logger;
 
 import edu.aprender.persistence.entity.Empleado;
-import edu.cibertec.persistence.jpa.EmpleadoJPA;
+import edu.aprender.persistence.jpa.EmpleadoJPA;
 
 public class EmpleadoTest {
 	
