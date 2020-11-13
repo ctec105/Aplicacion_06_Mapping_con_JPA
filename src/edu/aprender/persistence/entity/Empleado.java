@@ -25,13 +25,13 @@ public class Empleado {
 	
 //	// Usando Estrategias
 
-//	// 1) Identity: Ya no seteamos id en EmpleadoTest
+//	// 1) Identity: Ya no es necesario mandar el id, la bd se encargará de generarla
 //	@Id
 //	@Column(name="COD_EMP",unique=true,nullable=false) 
 //	@GeneratedValue(strategy= GenerationType.IDENTITY)
 //	private int id;
 
-//	// 2) Secuencia: Es una estructura demas de bd. En mysql para implementar una secuencia se debe crear una tabla y en esa tabla se crea un autoincrmentado de secuencia
+//	// 2) Secuencia: Es una estructura demás de bd. En mysql, para implementar una secuencia se debe crear una tabla y en esa tabla se crea un autoincrmentado de secuencia
 //	@Id
 //	@Column(name="COD_EMP",unique=true,nullable=false)
 //	@GeneratedValue(strategy= GenerationType.TABLE, generator="generador")
@@ -52,7 +52,7 @@ public class Empleado {
 	@Column(name="APE_EMP", length=45, nullable=false, insertable=true, updatable=true)
 	private String apellido;
 	
-	// columnDefinition: Es el fragmento de SQL utlizado para generar el DDL de l acolumna (depende del manejador de base de datos)
+	// columnDefinition: Es el fragmento de SQL utlizado para generar el DDL de la columna (depende del manejador de base de datos)
 	@Basic
 	@Column(name="NOM_EMP",length=45, columnDefinition="unsigned NOT NULL", insertable=true, updatable=true)
 	private String nombre;
@@ -65,7 +65,7 @@ public class Empleado {
 	@Column(name="ARE_EMP",length=45, nullable=false, insertable=true, updatable=true)
 	private String area;
 	
-	// @Transient: Si no quedemos que se inserte o se actualize en la bd
+	// @Transient: Si queremos que este atributo NO se inserte o se actualize en la bd
 	@Transient
 	private String nombreCompleto;
 	
